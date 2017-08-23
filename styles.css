@@ -1,0 +1,224 @@
+#labelBattlefield{
+	background-color: #FF5733;
+
+	position: fixed;
+
+
+	width: 250px;
+	height : 80px;
+
+	left : calc(50% - 125px);
+
+	z-index: 2;
+}
+
+#timer{
+
+	background-color: #FF5733 ;
+
+	position: fixed ;
+
+	width: 200px;
+	height: 100px;
+
+	right: 10px;
+	top: calc(50% - 50px)
+}
+
+#timeLeft{
+	background-color: yellow;
+
+	position: absolute;
+
+	height: 50px;
+	width: 200px;
+
+	bottom: 0px;
+	left: 0px;
+
+	text-align: center;
+
+	font-size: 30px;
+}
+
+#field{
+	background-color: #F8DEBD;
+
+	position: relative;
+
+	height: 1400px;
+	width: 700px;
+
+	left:calc(50% - 350px);
+	top: 200px;
+}
+
+.wall{
+	background-color: #9F6164;
+
+	position: absolute;
+	z-index: 1;
+}
+
+#leftWall{
+	width: 25px;
+	height: 100%;
+
+	top:0px;
+	left:0px;
+}
+
+#rightWall{
+	width: 25px;
+	height: 100%;
+
+	top:0px;
+	right:0px;	
+}
+
+#topWall{
+	height: 25px;
+	width: calc(100% - 50px);
+
+	left: 25px;
+	top:0px;
+}
+#bottomWall{
+	height: 25px;
+	width: calc(100% - 50px);
+
+	left: 25px;
+	bottom:0px;
+}
+
+.hwall{
+	height: 25px;
+	width: calc(100% - 200px);
+}
+
+[hwallno="1"]{
+	right:25px;
+	top: 225px;
+}
+
+[hwallno="2"]{
+	left:25px;
+	top: 450px;
+}
+
+[hwallno="3"]{
+	right:25px;
+	top: 675px;
+}
+
+[hwallno="4"]{
+	left:25px;
+	top: 900px;
+}
+
+[hwallno="5"]{
+	right:25px;
+	top: 1125px;
+}
+
+[hwallno="6"]{
+	left:25px;
+	top: 1350px;
+}
+
+
+#tank{
+	background-color: #FFAE5D;
+
+	position: relative;
+
+	height: 50px;
+	width: 80px;
+
+	left:calc(100% - 50px - 25px - 150px );
+	top:85px;
+
+	/*left: 50px;
+	bottom : 70px;*/
+}
+
+#tank.north{
+	transform: rotate(90deg);
+}
+
+#tank.east{
+	transform: rotate(180deg);
+}
+
+#tank.south{
+	transform: rotate(270deg);
+}
+
+#tank.west{
+	transform: rotate(0deg);
+}
+
+
+#turret{
+	background-color: #FFAE5D;
+	position: absolute;
+
+	height: 10%;
+	width:60px;
+
+	top:calc(50% - 5%);
+	left:-25px;
+
+}
+
+#trophy{
+	background-color: transparent;
+
+	position : absolute;
+
+	height: 150px;
+	width: 150px;
+
+	bottom :25px;
+	right: 25px;
+
+}
+
+#ut{
+	
+
+	position: absolute;
+
+	height: 0px;
+	width: 0px;
+
+	border : solid ;
+
+	border-top-width: 0px;
+	border-bottom-width: 110px;
+	border-right-width: 75px;
+	border-left-width:75px;
+
+	border-color:transparent transparent black transparent; 
+
+}
+
+#lt{
+	
+
+	position: absolute;
+
+	height: 0px;
+	width: 0px;
+
+	border : solid ;
+	top:40px;
+
+	border-top-width: 100px;
+	border-bottom-width: 0px;
+	border-right-width: 75px;
+	border-left-width:75px;
+
+	border-color:black transparent transparent transparent; 
+
+}
